@@ -66,7 +66,7 @@ function disableButton(){
 }
 
 function checkWinner(){
-    if(player === 5){
+    if(player === 5 || computer === 5){
         outcome.innerHTML =`
         <div id="xx>
         <p>
@@ -75,16 +75,7 @@ function checkWinner(){
         <button id="PA" onclick="reset()">PLAY AGAIN?</button>
         </div>`
         disableButton()
-    }else if(computer === 5){
-        outcome.innerHTML =`
-        <div id="xx"
-        <p>
-        <span class="cmp" style="color: red; font-size: 52px">COMPUTER </span>
-        WINS!</p>
-        <button id="PA" onclick="reset()">PLAY AGAIN?</button>
-        </div>`
-        disableButton()
-    }
+     }
 }
 
 function reset(){
@@ -96,6 +87,7 @@ function reset(){
     document.getElementById("three").disabled = false;
     playerScore.innerText = "PLAYER = " + player
     computerScore.innerText = "COMPUTER = " + computer
+    outcome.innerHTML =`<p></p>`
 }
 
 function score(){
