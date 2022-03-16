@@ -25,6 +25,8 @@ let outcome = document.getElementById("status")
 let playerScore = document.getElementById("pl")
 let computerScore = document.getElementById("pc")
 
+outcome.innerHTML =`<p style="color: green; font-size: 52px">LET'S PLAY!</p>`
+
 function sortChoice(choiceP, choiceC){
     choiceC = items[Math.floor(Math.random() * items.length)];
     if(choiceP === items[0] && choiceC === items[1]){
@@ -90,6 +92,7 @@ function reset(){
     outcome.innerHTML =`<p></p>`
     cc.innerText = ""
     pp.innerText = ""
+    outcome.innerHTML =`<p style="color: green; font-size: 52px">LET'S GO!</p>`
 }
 
 function score(){
