@@ -99,6 +99,18 @@ span{
     justify-content: center;
 }
 
+.winner{
+    color: greenyellow;
+}
+
+.pWin{
+    color: greenyellow;
+
+}
+.cWin{
+    color: red;
+}
+
 #PA{
     background: #00fe66;
     color: black;

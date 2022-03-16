@@ -25,7 +25,10 @@ let outcome = document.getElementById("status")
 let playerScore = document.getElementById("pl")
 let computerScore = document.getElementById("pc")
 
-outcome.innerHTML =`<p style="color: green; font-size: 52px">LET'S PLAY!</p>`
+outcome.innerHTML =`<p
+                    style="color: green;
+                    font-size: 52px">
+                    LET'S PLAY!</p>`
 
 function sortChoice(choiceP, choiceC){
     choiceC = items[Math.floor(Math.random() * items.length)];
@@ -58,7 +61,6 @@ function sortChoice(choiceP, choiceC){
     }
     cc.innerText = choiceC
     pp.innerText = choiceP
-    
 }
 
 function disableButton(){
@@ -68,20 +70,28 @@ function disableButton(){
 }
 
 function checkWinner(){
-    if(player === 5 || computer === 5){
+    if(player === 5){
         outcome.innerHTML =`
         <div id="xx>
         <p>
-        <span class="ply" style="color: green; font-size: 52px">PLAYER </span>
+        <span class="pWin" style="color:green; font-size: 52px">PLAYER </span>
         WINS!</p>
         <button id="PA" onclick="reset()">PLAY AGAIN?</button>
         </div>`
         disableButton()
+    }else if(computer === 5){
+         outcome.innerHTML =`
+         <div id="xx>
+         <p>
+         <span class="cWin" style="color:red; font-size: 52px">COMPUTER </span>
+         WINS!</p>
+         <button id="PA" onclick="reset()">PLAY AGAIN?</button>
+         </div>`
+         disableButton()
      }
 }
 
 function reset(){
-    
     player = 0
     computer = 0
     document.getElementById("one").disabled = false;
@@ -89,10 +99,12 @@ function reset(){
     document.getElementById("three").disabled = false;
     playerScore.innerText = "PLAYER = " + player
     computerScore.innerText = "COMPUTER = " + computer
-    outcome.innerHTML =`<p></p>`
     cc.innerText = ""
     pp.innerText = ""
-    outcome.innerHTML =`<p style="color: green; font-size: 52px">LET'S GO!</p>`
+    outcome.innerHTML =`<p 
+                        style="color: green; 
+                        font-size: 52px">
+                        LET'S GO!</p>`
 }
 
 function score(){
