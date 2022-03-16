@@ -1,4 +1,4 @@
-let items = ["rock", "paper", "scissor"]
+const items = ["rock", "paper", "scissor"]
 let choiceP = ""
 let choiceC = ""
 let player = 0
@@ -18,12 +18,12 @@ function ft_paper(){
     score()
 }
 
-let cc = document.getElementById("c-choice")
-let pp = document.getElementById("p-choice")
-let outcome = document.getElementById("status")
+const cc = document.getElementById("c-choice")
+const pp = document.getElementById("p-choice")
+const outcome = document.getElementById("status")
 
-let playerScore = document.getElementById("pl")
-let computerScore = document.getElementById("pc")
+const playerScore = document.getElementById("pl")
+const computerScore = document.getElementById("pc")
 
 outcome.innerHTML =`<p
                     style="color: green;

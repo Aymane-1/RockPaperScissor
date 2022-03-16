@@ -4,7 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 18px;
+    margin: 32px;
 }
 
 .animation{
@@ -55,7 +55,7 @@ span{
     display: flex;
     justify-content: space-around;
     padding: 62px;
-    margin: 12px 0px;
+    margin: 82px;
     border: 3px solid white;
     border-radius: 10px;
 }
@@ -72,7 +72,6 @@ span{
     justify-content: center;
     align-items: center;
     font-size: 42px;
-    font-family: monospace;
     font-family: monospace;
     font-weight: 900;
 }
@@ -150,8 +149,8 @@ span{
     border: 3px solid white;
     border-radius: 10px;
     justify-content: space-around;
-    padding: 32px;
-    margin: 32px 0px;
+    padding: 62px;
+    margin: 62px;
 }
 
 button{
