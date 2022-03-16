@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Paper Scissor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <img class="animation" src="./images/hands.gif">
+    <div class="container">
+        <p class="first">First to score <span>5 points</span> wins the <span class="game">GAME</span>!</p>
+        <div class="displays">
+            <div class="P">
+                <img src="./images/human.png">
+                <p id="pl">PLAYER = 0</p>
+                <p id=p-choice></p>
+            </div>
+                <p id="status"></p>
+            <div class="C"><img src="./images/computer.png">
+            <p id="pc">COMPUTER = 0</p>
+            <p id=c-choice></p>
+            </div>
+        </div>
+        <h2>Choose your <span class="weapon">weapon</span>!</h2>
+        <div class="boxes">
+            <button id="one" onclick="ft_rock()">
+                <img src="./images/fist.png">
+                <p>ROCK</p>
+            </button>
+            <button id="two" onclick="ft_scissor()">
+                <img src="./images/scissor.png">
+                <p>SCISSOR</p>
+            </button>
+            <button id="three" onclick="ft_paper()">
+                <img src="./images/paper.png">
+                <p>PAPER</p>
+            </button>
+        </div>
+    </div>
+    <footer>&copy; Powered by Basilisk 🐉</footer>
+    <script src="./index.js"></script>
+</body>
+</html>
