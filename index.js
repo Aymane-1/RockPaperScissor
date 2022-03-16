@@ -54,8 +54,8 @@ function sortChoice(choiceP, choiceC){
     }else{
         outcome.innerText = "IT'S A TIE!"
     }
-    cc.innerText= choiceC
-    pp.innerText= choiceP
+    cc.innerText = choiceC
+    pp.innerText = choiceP
     
 }
 
@@ -88,6 +88,8 @@ function reset(){
     playerScore.innerText = "PLAYER = " + player
     computerScore.innerText = "COMPUTER = " + computer
     outcome.innerHTML =`<p></p>`
+    cc.innerText = ""
+    pp.innerText = ""
 }
 
 function score(){
